@@ -53,26 +53,30 @@
         Заполнение заявки
       </div>
       <form class="Form" align="center">
-        <p align="left">Ваше ФИО:</p>
-        <input class="in" name="FIO">
-        <p align="left">Ваш номер телефона:</p>
-        <input class="in" name="PhNum">
-        <p align="left">Дата записи:</p>
-        <input class="in" name="Date">
-        <p align="left">Выберите специалиста</p>
-        <div align="left">
-        <input type="button" class="btnChs" value="Выбрать" name="btnChoose">
-        </div>
+        <p id="fioP" onclick="onFocusFIO();" align="left">Ваше ФИО:</p>
+
+        <input id="fio" class="in" name="FIO">
+
+        <p id="phNumP" onclick="onFocusPhNum();" align="left">Ваш номер телефона:</p>
+
+        <input id="phone" class="in" name="PhNum">
+
+        <p id="dateP" onclick="onFocusDate();" align="left">Дата записи:</p>
+
+        <input id="date" class="in" name="Date" type="date">
+        <br>
         <div class="radioBtn" align="left">
-        <input type="radio" name="btnAcception">
-        Я согласен с политикой обработки персональных данных
+          <input  id="chek" type="radio" name="btnAcception">
+          <text id="AcceptP" onclick="onFocusAccept();">Я согласен с политикой обработки персональных данных</text> 
         </div>
         <div align="left">
-        Вам придет смс-оповещение о зарегистрированной заявке
+          Вам придет смс-оповещение о зарегистрированной заявке
         </div>
-        <a href="desktop-2.html"><input type="button" class="btnDone" value="Записаться на приём" name="AcceptVisit"></input></a>
+        <button class="btnDone">Записаться на прием</button>
       </form>
   </div>
   </div>
  </body>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+ <script src="Order.js"></script>
 </html>
